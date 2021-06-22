@@ -30,6 +30,9 @@ export class ListCategoriesComponent implements OnInit {
   goCreate(){
     return this.router.navigate(['CreateCategories']);
   }
+  goCreateProduit(id:any){
+    return this.router.navigate(['createProduit/',`${id}`]);
+  }
   delete(id:any){
     return this.service.deleteCategorie(id).subscribe(
       data =>this.getListCategories()

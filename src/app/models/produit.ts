@@ -5,4 +5,5 @@ export class Produit {
     disponibilite:any;
     date_creation:any;
     date_modif: any;
+    categories:any;
 }

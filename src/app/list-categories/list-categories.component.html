@@ -1,7 +1,7 @@
 
 <h1>Liste des Categories</h1>
 <div class="container">
-    <button class="btn btn-success" (click)=goCreate()>Add Categorie</button>  
+  <button class="btn btn-success" (click)=goCreate()>Add Categorie</button>
   <table class="table table-hover">
     <thead>
       <th>Nom</th>
@@ -16,16 +16,17 @@
         <td>{{ p.qte }}</td>
         <td>{{ p.date_creation }}</td>
         <td>{{ p.date_modif }}</td>
+        <td><button class="btn btn-success" (click)=goCreateProduit(p.id)>Add Produit</button></td>
         <td><button class="btn btn-danger" (click)=delete(p.id)>Delete</button></td>
         <td><button class="btn btn-warning" (click)=GoEdit(p.id)>Edit</button></td>
         <td><button class="btn btn-info" (click)=GoDetail(p.id)>Detail</button></td>
       </tr>
     </tbody>
   </table>
-  <button (click)="getListCategories()" class="btn btn-primary">
+ <!-- <button (click)="getListCategories()" class="btn btn-primary">
     Get Categories
-  </button>
+  </button>-->
   <button (click)="getListProduits()" class="btn btn-primary">
-    Get Produits
+    Get All Produits
   </button>
 </div>

@@ -23,10 +23,16 @@ export class ListProduitsComponent implements OnInit {
   }
   delete(id:any){
     return this.service.deleteProduits(id).subscribe(
-      data =>this.getListProduits()
+      data =>this.goBack()
     )
   }
   GoEdit(id:any){
     return this.router.navigate(['EditProduits/',`${id}`]);
+  }
+  GoDetail(id:any){
+    return this.router.navigate(['detailProduit/',`${id}`]);
+  }
+  goBack(){
+    return this.router.navigate(['listCategorie']);
   }
 }

@@ -20,9 +20,9 @@
         <td>{{ p.date_modif }}</td>
         <td><button class="btn btn-danger" (click)=delete(p.id)>Delete</button></td>
         <td><button class="btn btn-warning" (click)=GoEdit(p.id)>Edit</button></td>
-        <td><button class="btn btn-info" >Detail</button></td>
+        <td><button class="btn btn-info" (click)=GoDetail(p.id)>Detail</button></td>
       </tr>
     </tbody>
   </table>
- 
+ <button class="btn btn-info" (click)=goBack()>List Categories</button>
 </div>

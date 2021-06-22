@@ -23,4 +23,11 @@ export class CrudProduitsService {
   getProduits(id: number ): Observable<any> {
     return this.http.get(this.URLProduit+'/' + id);
   }
+
+  detailProduits(id:any):Observable<any>{
+    return this.http.get(`${this.URLProduit}/${id}`);
+  }
+  addProduits(produit : any, id:any){
+    return this.http.post(`${this.URLProduit}/${id}`,produit);
+  }
 }
