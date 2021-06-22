@@ -23,8 +23,9 @@ export class ListProduitsComponent implements OnInit {
   }
   delete(id:any){
     return this.service.deleteProduits(id).subscribe(
-      data =>this.goBack()
+      data =>console.log(data),()=>{},()=>{this.goBack()}
     )
+    
   }
   GoEdit(id:any){
     return this.router.navigate(['EditProduits/',`${id}`]);

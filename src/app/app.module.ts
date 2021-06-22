@@ -13,6 +13,7 @@ import { EditProduitComponent } from './edit-produit/edit-produit.component';
 import { DetailProduitComponent } from './detail-produit/detail-produit.component';
 import { CreateProduitComponent } from './create-produit/create-produit.component';
 import { ErrorComponent } from './error/error.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ErrorComponent } from './error/error.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule, 
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,7 +2,8 @@
 <h1>Liste des Categories</h1>
 <div class="container">
   <button class="btn btn-success" (click)=goCreate()>Add Categorie</button>
-  <table class="table table-hover">
+  <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Start searching ">
+  <table class="table table-hover" id="excel-table">
     <thead>
       <th>Nom</th>
       <th>qte</th>
@@ -11,7 +12,7 @@
       <th>Action </th>
     </thead>
     <tbody>
-      <tr *ngFor="let p of listCategories">
+      <tr *ngFor="let p of listCategories| filter : searchText">
         <td>{{ p.nom }}</td>
         <td>{{ p.qte }}</td>
         <td>{{ p.date_creation }}</td>
@@ -29,4 +30,6 @@
   <button (click)="getListProduits()" class="btn btn-primary">
     Get All Produits
   </button>
+  <button class="btn btn-secondary" (click)=openPDF()>Export PDF</button>
+  <button class="btn btn-secondary" (click)=exportToExcel()>Export Excel</button>
 </div>
