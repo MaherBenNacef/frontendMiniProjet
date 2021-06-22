@@ -1,0 +1,29 @@
+
+<button (click)="GoBack()" class="btn btn-primary">
+    Go Back
+  </button>
+<div class="container" >
+    <h3>Edit categories</h3>
+    <div   style="width: 400px;">
+      <form (ngSubmit)="editCategorie()">
+        <div class="form-group">
+          <label >Name</label>
+          <input type="text" class="form-control" id="nom" name="nom" required [(ngModel)]="produit.nom">
+        </div>
+    
+        <div class="form-group">
+          <label >quatité</label>
+          <input type="number" class="form-control" id="qte" name="qte" required [(ngModel)]="produit.qte">
+        </div>
+
+        <div class="form-group">
+            <label >disponibilite</label>
+            <input type="number" class="form-control" id="disponibilite" name="disponibilite" required [(ngModel)]="produit.disponibilite">
+            <input type="checkbox" id="disponibilite" name="disponibilite" value="True">
+            <label for="disponibilite"> Disponible</label><br>
+          </div>
+    
+        <button type="submit" class="btn btn-success">Edit</button>
+      </form>
+    </div>
+    </div>

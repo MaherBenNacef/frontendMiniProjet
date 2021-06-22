@@ -1,0 +1,28 @@
+
+<h1>Liste des Produits</h1>
+<div class="container">
+    
+  <table class="table table-hover">
+    <thead>
+      <th>Nom</th>
+      <th>qte</th>
+      <th>disponibilite</th>
+      <th>date creation</th>
+      <th>date modif</th>
+      <th>Action </th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of listProduits">
+        <td>{{ p.nom }}</td>
+        <td>{{ p.qte }}</td>
+        <td>{{ p.disponibilite }}</td>
+        <td>{{ p.date_creation }}</td>
+        <td>{{ p.date_modif }}</td>
+        <td><button class="btn btn-danger" (click)=delete(p.id)>Delete</button></td>
+        <td><button class="btn btn-warning" (click)=GoEdit(p.id)>Edit</button></td>
+        <td><button class="btn btn-info" >Detail</button></td>
+      </tr>
+    </tbody>
+  </table>
+ 
+</div>
