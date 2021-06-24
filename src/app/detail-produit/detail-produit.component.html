@@ -1,6 +1,41 @@
-<p>detail-produit works!</p>
-{{produit.nom}}
-{{produit.qte}}
-{{produit.disponibilite}}
-{{produit.categorie}}
-<button class="btn bnt-info" (click)=goBack()>Go Back</button>
+
+
+<div >
+    <h4>Detail Produit</h4>
+    <hr />
+    <dl class="dl-horizontal" >
+        <dt>
+            Nom
+        </dt>
+
+        <dd>
+            {{produit.nom}}
+        </dd>
+
+        <dt>
+           Quantite
+        </dt>
+
+        <dd>
+            {{produit.qte}}
+        </dd>
+
+        <dt>
+            Disponibilite
+        </dt>
+
+        <dd>
+            {{produit.disponibilite}}
+        </dd>
+        <dt>
+            Date Creation
+        </dt>
+
+        <dd>
+            {{produit.date_creation}}
+        </dd>
+        
+        
+
+    </dl>
+</div>
