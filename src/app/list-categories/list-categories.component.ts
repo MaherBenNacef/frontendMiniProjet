@@ -45,6 +45,9 @@ export class ListCategoriesComponent implements OnInit {
   GoEdit(id:any){
     return this.router.navigate(['EditCategories/',`${id}`]);
   }
+  GoProduitByCategorie(id:any){
+    return this.router.navigate(['produitByCat/',`${id}`]);
+  }
   GoDetail(id:any){
     return this.router.navigate(['detailCategories/',`${id}`]);
   }

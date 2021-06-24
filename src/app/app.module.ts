@@ -14,6 +14,7 @@ import { DetailProduitComponent } from './detail-produit/detail-produit.componen
 import { CreateProduitComponent } from './create-produit/create-produit.component';
 import { ErrorComponent } from './error/error.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ProduitByCategorieComponent } from './produit-by-categorie/produit-by-categorie.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     EditProduitComponent,
     DetailProduitComponent,
     CreateProduitComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProduitByCategorieComponent
   ],
   imports: [
     BrowserModule,

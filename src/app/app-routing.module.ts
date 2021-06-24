@@ -10,6 +10,7 @@ import { EditComponent } from './edit/edit.component';
 import { ErrorComponent } from './error/error.component';
 import { ListCategoriesComponent } from './list-categories/list-categories.component';
 import { ListProduitsComponent } from './list-produits/list-produits.component';
+import { ProduitByCategorieComponent } from './produit-by-categorie/produit-by-categorie.component';
 
 const routes: Routes = [
   { path: "", component: ListCategoriesComponent},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:"EditProduits/:id",component:EditProduitComponent},
   {path:"detailProduit/:id",component:DetailProduitComponent},
   {path:"createProduit/:id",component:CreateProduitComponent},
+  {path:"produitByCat/:id",component:ProduitByCategorieComponent},
   { path: "**", component: ErrorComponent }
   
 ];
