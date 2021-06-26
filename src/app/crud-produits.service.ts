@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class CrudProduitsService {
 
-  URLProduit="http://localhost:8080/produits";
-  url="http://localhost:8080/produits/byCategorie"
+  URLProduit="http://localhost:8090/produits";
+  url="http://localhost:8090/produits/byCategorie"
   constructor(private http: HttpClient) { }
 
   getAllProduits(){
